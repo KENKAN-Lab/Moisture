@@ -1,0 +1,16 @@
+1D_heat_moisture_main -> balance_equation
+1D_heat_moisture_main -> property_conversion 
+1D_heat_moisture_main -> moisture_conversion 
+
+balance_equation
+
+property_conversion -> vapour_pressure
+property_conversion -> bentheimer_sandstone
+
+moisture_conversion -> vapour_pressure
+
+bentheimer_sandstone -> van_genuchten
+
+van_genuchten
+
+vapour_pressure
